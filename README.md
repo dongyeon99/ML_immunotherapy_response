@@ -28,4 +28,7 @@ Because the file size is limited to 25MB or less, the data used for the training
 
 ## Citation
 
+Dong-Yeon Nam and Je-Keun Rhee. "Identifying microRNAs associated with tumor immunotherapy response using an interpretable machine learning model."
+
+
 <br/>
