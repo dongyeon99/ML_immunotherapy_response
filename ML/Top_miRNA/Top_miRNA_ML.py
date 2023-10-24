@@ -40,7 +40,6 @@ from sklearn.metrics import f1_score
 
 data = pd.read_csv("/Data/Result/TIDE_TCGA19_miR.csv")
 
-#data = pd.read_csv("/mnt/c/Users/laboratory/python_work/TIDE/github_code/Data/Result/TIDE_TCGA19_miR.csv")
 
 ###########################
 #### Data preprocessing ###
