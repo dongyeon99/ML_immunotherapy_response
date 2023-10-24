@@ -242,9 +242,7 @@ print(" ")
 
 
 # Data load 
-#val_data = pd.read_csv("/Data/Result/TIDE_TCGA_val_miR.csv")
-
-val_data = pd.read_csv("/mnt/c/Users/laboratory/python_work/TIDE/github_code/Data/Result/TIDE_TCGA_val_miR.csv")
+val_data = pd.read_csv("/Data/Result/TIDE_TCGA_val_miR.csv")
 
 # Data split 
 x_val = val_data.iloc[:,2:1883]
