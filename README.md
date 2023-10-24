@@ -6,7 +6,7 @@ Machine learning models were constructed to predict the response to tumor ICB th
 <br/>
 
 ## Data processing
-
+data/preprocessing folder using R code.
 The miRNA expression data for the TCGA cohorts can be accessed at https://gdc.xenahubs.net. 
 Additionally, the gene expression data for TCGA cohorts, which were used as input data for the TIDE method, also can be found at https://gdc.xenahubs.net. 
 
