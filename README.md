@@ -10,16 +10,17 @@ In conclusion, this study successfully predicted responses to tumor immunotherap
 <br/>
 
 ## Data processing
+Use the R script files in Data/Preprocessing/ folder to create data for TIDE tools and data for machine learning.
 
-data/preprocessing folder using R code.
 The miRNA expression data for the TCGA cohorts can be accessed at https://gdc.xenahubs.net. 
-Additionally, the gene expression data for TCGA cohorts, which were used as input data for the TIDE method, also can be found at https://gdc.xenahubs.net. 
 
+Additionally, the gene expression data for TCGA cohorts, which were used as input data for the TIDE method, also can be found at https://gdc.xenahubs.net. 
 
 
 <br/>
 
 ## Download
+
 
 
 <br/>
