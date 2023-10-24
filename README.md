@@ -1,2 +1,3 @@
-# ML_immunotherapy_response
-Tumor Immunotherapy Response Prediction
+# Tumor immunotherapy response prediction using RNA sequencing-based microRNA expression profiles
+
+Machine learning models were constructed to predict the response to tumor ICB therapy using miRNA expression profiles. 
