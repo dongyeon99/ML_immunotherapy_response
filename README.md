@@ -1,5 +1,4 @@
 # Tumor immunotherapy response prediction using RNA sequencing-based microRNA expression profiles
-
 Tumor immunotherapy is an anti-cancer treatment strategy that has the benefits of continuous clinical response and fewer side effects. 
 However, the high cost and the fact that some patients do not respond to treatment present challenges treatment. 
 In this study, we built machine learning models aimed at predicting responses to tumor immunotherapy by employing miRNA expression profiles.
@@ -20,6 +19,9 @@ Additionally, the gene expression data for TCGA cohorts, which were used as inpu
 <br/>
 
 ## Download
+The machine learning model and data used for training have been uploaded to this repository.
+
+Because the file size is limited to 25MB or less, the data used for the training was uploaded to the gz file. So use it after decompressing.
 
 
 
