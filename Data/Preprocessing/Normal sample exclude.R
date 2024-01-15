@@ -42,7 +42,7 @@ for (n in normal){
   assign(paste0(c("tumor_sample")), Remove_normal_sample(n, tumor_sample))}
 
 # save
-write.csv(tumor_sample, file = "C:/Users/laboratory/Documents/TIDE_Score_TCGA19_miR_rm_dup.csv")
+write.csv(tumor_sample, file = "./data.csv")
 
 
 
@@ -53,7 +53,7 @@ for (n in normal){
   assign(paste0(c("val_tumor_sample")), Remove_normal_sample(n, val_tumor_sample))}
 
 # save
-write.csv(val_tumor_sample, file = "C:/Users/laboratory/Documents/TIDE_Score_TCGA_Val_miR_rm_dup.csv")
+write.csv(val_tumor_sample, file = "./validation_data.csv")
 
 
 
