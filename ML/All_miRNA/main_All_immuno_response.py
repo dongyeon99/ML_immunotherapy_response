@@ -21,7 +21,8 @@ from models_All_immuno_response import *
 
 #### Data prepare ####
 # path
-data_folder = "/home/dong/python_work/TIDE/py_code"
+data_folder = "/ML_immunotherapy_response/Data/Result/"
+model_folder = "/ML_immunotherapy_response/ML/All_miRNA/models/"
 
 # data laod
 data = pd.read_csv(os.path.join(data_folder,"data.csv"))
@@ -44,7 +45,7 @@ for i in tr_te:
 print("## Random Forest Classifier ##")
 print(" ")
 
-All_RFC = RFC(x_train, x_test, y_train_ctl, y_test_ctl, data_folder)
+All_RFC = RFC(x_train, x_test, y_train_ctl, y_test_ctl, model_folder)
 
 CTL_best_model = All_RFC[0]
 CTL_best_model_pred = All_RFC[1]
@@ -57,7 +58,7 @@ print(" ")
 target_list = ['tide', 'dys', 'exc']
 
 for j in target_list:
-    All_RFR = RFR(x_train, x_test, globals()["y_train_{}".format(j)], globals()["y_test_{}".format(j)], data_folder)
+    All_RFR = RFR(x_train, x_test, globals()["y_train_{}".format(j)], globals()["y_test_{}".format(j)], model_folder)
     globals()["best_model_{}".format(j)], globals()["best_model_{}_pred".format(j)] = All_RFR[0], All_RFR[1]
 
 
@@ -87,9 +88,9 @@ y_val_exc = val_data[['Exclusion']]
 # Validation test model 
 
 # Pre-trained model load
-CTL_model = joblib.load(os.path.join(data_folder,"All_CTL_model.pkl"))
-Dys_model = joblib.load(os.path.join(data_folder,"All_RFR_Dysfunction.pkl"))
-Exc_model = joblib.load(os.path.join(data_folder,"All_RFR_Exclusion.pkl"))
+CTL_model = joblib.load(os.path.join(model_folder,"All_CTL_model.pkl"))
+Dys_model = joblib.load(os.path.join(model_folder,"All_RFR_Dysfunction.pkl"))
+Exc_model = joblib.load(os.path.join(model_folder,"All_RFR_Exclusion.pkl"))
 
 # Prediction
 CTL_val_pred = CTL_model.predict(x_val)
