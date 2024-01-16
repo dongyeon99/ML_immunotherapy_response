@@ -26,7 +26,7 @@ from models_Top_immuno_response import *
 #### Data prepare ####
 
 # Path
-data_folder = "/home/dong/python_work/TIDE/py_code"
+data_folder = "/ML_immunotherapy_response/Data/Result/"
 
 # Data load
 Top = prepare_tr_te(data_folder)
