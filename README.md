@@ -28,6 +28,7 @@ Because the file size is limited to 25MB or less, the data used for the training
 
 ## Installation
 ### Dependencies
+
 ```
 python
 pandas
@@ -37,7 +38,6 @@ warnings
 os
 sklearn
 joblib
-
 ```
 
 
