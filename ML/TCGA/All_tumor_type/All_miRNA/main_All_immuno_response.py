@@ -21,8 +21,8 @@ from models_All_immuno_response import *
 
 #### Data prepare ####
 # path
-data_folder = "/ML_immunotherapy_response/Data/Result/"
-model_folder = "/ML_immunotherapy_response/ML/All_miRNA/models/"
+data_folder = "/ML_immunotherapy_response/Data/Result/TCGA/"
+model_folder = "/ML_immunotherapy_response/ML/TCGA/All_tumor_type/All_miRNA/models/"
 
 # data laod
 data = pd.read_csv(os.path.join(data_folder,"data.csv"))
