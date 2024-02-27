@@ -28,7 +28,7 @@ from models_PCAWG_All_immuno_response import *
 #### Data prepare ####
 
 # Path
-data_folder = "/home/dong/python_work/TIDE/py_code/PCAWG/data/"
+data_folder = "/ML_immunotherapy_response/Data/Result/PCAWG/"
 
 model_save_folder = "ML/PCAWG/All/model/"
 
