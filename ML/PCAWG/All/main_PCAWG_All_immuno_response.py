@@ -29,8 +29,7 @@ from models_PCAWG_All_immuno_response import *
 
 # Path
 data_folder = "/ML_immunotherapy_response/Data/Result/PCAWG/"
-
-model_save_folder = "ML/PCAWG/All/model/"
+model_save_folder = "/ML_immunotherapy_response/ML/PCAWG/All/models/"
 
 # Data load
 All = prepare_tr_te(data_folder)
