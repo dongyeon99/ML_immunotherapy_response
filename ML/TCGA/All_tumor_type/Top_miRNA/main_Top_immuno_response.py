@@ -26,7 +26,8 @@ from models_Top_immuno_response import *
 #### Data prepare ####
 
 # Path
-data_folder = "/home/dong/python_work/TIDE/py_code"
+data_folder = "/ML_immunotherapy_response/Data/Result/TCGA/"
+model_folder = "/ML_immunotherapy_response/ML/TCGA/All_tumor_type/Top_miRNA/models/"
 
 # Data load
 Top = prepare_tr_te(data_folder)
@@ -59,7 +60,7 @@ print(" ")
 
 for i in Top_list:
     
-    Top_Logi = Logi(globals()["{}_x_train_ctl".format(i)], globals()["{}_x_test_ctl".format(i)], y_train_ctl, y_test_ctl, data_folder)
+    Top_Logi = Logi(globals()["{}_x_train_ctl".format(i)], globals()["{}_x_test_ctl".format(i)], y_train_ctl, y_test_ctl, model_folder)
 
     globals()["{}_best_model_ctl".format(i)] = Top_Logi[0]
     globals()["{}_best_model_ctl_pred".format(i)] = Top_Logi[1]
@@ -73,7 +74,7 @@ print(" ")
 for i in Top_list:
     for j in target_list:
         print("{}_MSE_{}_test:".format(i,j))
-        Top_LR = LR(globals()["{}_x_train_{}".format(i, j)], globals()["{}_x_test_{}".format(i, j)], globals()["y_train_{}".format(j)], globals()["y_test_{}".format(j)], data_folder)
+        Top_LR = LR(globals()["{}_x_train_{}".format(i, j)], globals()["{}_x_test_{}".format(i, j)], globals()["y_train_{}".format(j)], globals()["y_test_{}".format(j)], model_folder)
         
         globals()["{}_best_model_{}".format(i,j)] = Top_LR[0]
         globals()["{}_best_model_{}_pred".format(i,j)] = Top_LR[1]
@@ -112,9 +113,9 @@ for i in val:
 
 # Pre-trained model load
 for i in Top_list:
-    globals()['{}_CTL_model'.format(i)] = joblib.load(os.path.join(data_folder,"{}_Logi_CTL.pkl".format(i)))
-    globals()['{}_Dys_model'.format(i)] = joblib.load(os.path.join(data_folder,"{}_LR_Dysfunction.pkl".format(i)))
-    globals()['{}_Exc_model'.format(i)] = joblib.load(os.path.join(data_folder,"{}_LR_Exclusion.pkl".format(i)))
+    globals()['{}_CTL_model'.format(i)] = joblib.load(os.path.join(model_folder,"{}_Logi_CTL.pkl".format(i)))
+    globals()['{}_Dys_model'.format(i)] = joblib.load(os.path.join(model_folder,"{}_LR_Dysfunction.pkl".format(i)))
+    globals()['{}_Exc_model'.format(i)] = joblib.load(os.path.join(model_folder,"{}_LR_Exclusion.pkl".format(i)))
 
 # Prediction
 for i in Top_list:
