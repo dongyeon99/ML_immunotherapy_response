@@ -25,7 +25,7 @@ from models_All_Each_tumor_immuno_response import *
 
 #### TCGA Each tumor type Data processing ####
 
-TCGA_Each_folder = "/home/dong/python_work/TIDE/TCGA_each_tumor/"
+TCGA_Each_folder = "/ML_immunotherapy_response/Data/Result/TCGA/"
 
 TCGA_list = ["SKCM","UVM","LUAD","LUSC","BLCA","BRCA","CESC","COAD","ESCA","HNSC",
             "KIRC","KIRP","LGG","LIHC","OV","PAAD","SARC","STAD","UCEC"]
