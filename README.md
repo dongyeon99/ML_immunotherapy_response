@@ -1,4 +1,4 @@
-# Tumor immunotherapy response prediction using RNA sequencing-based microRNA expression profiles
+# Identifying microRNAs associated with tumor immunotherapy response using an interpretable machine learning model
 Tumor immunotherapy is an anti-cancer treatment strategy that has the benefits of continuous clinical response and fewer side effects. 
 However, the high cost and the fact that some patients do not respond to treatment present challenges treatment. 
 In this study, we built machine learning models aimed at predicting responses to tumor immunotherapy by employing miRNA expression profiles.
