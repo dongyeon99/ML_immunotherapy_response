@@ -15,6 +15,8 @@ The miRNA expression data for the TCGA cohorts can be accessed at https://gdc.xe
 
 Additionally, the gene expression data for TCGA cohorts, which were used as input data for the TIDE method, also can be found at https://gdc.xenahubs.net. 
 
+For additional validation, bulk RNA-seq and mature miRNA expression data were acquired from PCAWG (Pan-Cancer Analysis of Whole Genomes) (https://pcawg.xenahubs.net).
+
 
 <br/>
 
