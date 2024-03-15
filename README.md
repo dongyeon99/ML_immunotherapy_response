@@ -40,6 +40,7 @@ warnings
 os
 sklearn
 joblib
+auto_shap
 ```
 
 
