@@ -47,7 +47,7 @@ joblib
 
 ## Citation
 
-Dong-Yeon Nam and Je-Keun Rhee. "Identifying microRNAs associated with tumor immunotherapy response using an interpretable machine learning model."
+Dong-Yeon Nam and Je-Keun Rhee. "Identifying microRNAs associated with tumor immunotherapy response using an interpretable machine learning model." Sci Rep 14, 6172 (2024). https://doi.org/10.1038/s41598-024-56843-3
 
 
 <br/>
